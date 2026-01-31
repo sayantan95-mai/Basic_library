@@ -2,17 +2,13 @@
     {
         "name": "Alice Smith",
         "user_id": 5001,
-        "borrowed_items": [
-            102
-        ],
+        "borrowed_items": [],
         "type": "Member"
     },
     {
         "name": "Bob Jones",
         "user_id": 5002,
-        "borrowed_items": [
-            202
-        ],
+        "borrowed_items": [],
         "type": "Member"
     },
     {

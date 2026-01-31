@@ -12,7 +12,7 @@
         "unique_id": 102,
         "location": "B2-Tech",
         "type": "Book",
-        "is_borrowed": true,
+        "is_borrowed": false,
         "pages": "544"
     },
     {
@@ -28,7 +28,7 @@
         "unique_id": 202,
         "location": "D5-Movies",
         "type": "DVD",
-        "is_borrowed": true,
+        "is_borrowed": false,
         "runtime": "136 min"
     },
     {
