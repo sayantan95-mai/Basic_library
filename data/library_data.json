@@ -1,21 +1,50 @@
 [
     {
-        "title": "cc",
-        "unique_id": 3,
-        "department": "test",
-        "location": "third"
-    },
-    {
-        "title": "aa",
-        "unique_id": 1,
-        "department": "test",
-        "location": "ground"
-    },
-    {
-        "title": "bb",
-        "unique_id": 23,
-        "location": "ground",
+        "title": "The Great Gatsby",
+        "unique_id": 101,
+        "location": "A1-Shelf",
         "type": "Book",
-        "pages": "33"
+        "is_borrowed": false,
+        "pages": "180"
+    },
+    {
+        "title": "Python Crash Course",
+        "unique_id": 102,
+        "location": "B2-Tech",
+        "type": "Book",
+        "is_borrowed": true,
+        "pages": "544"
+    },
+    {
+        "title": "Inception",
+        "unique_id": 201,
+        "location": "D5-Movies",
+        "type": "DVD",
+        "is_borrowed": false,
+        "runtime": "148 min"
+    },
+    {
+        "title": "The Matrix",
+        "unique_id": 202,
+        "location": "D5-Movies",
+        "type": "DVD",
+        "is_borrowed": true,
+        "runtime": "136 min"
+    },
+    {
+        "title": "National Geographic",
+        "unique_id": 301,
+        "location": "M1-Rack",
+        "type": "Magazine",
+        "is_borrowed": false,
+        "issue": "August 2023"
+    },
+    {
+        "title": "Time Magazine",
+        "unique_id": 302,
+        "location": "M1-Rack",
+        "type": "Magazine",
+        "is_borrowed": false,
+        "issue": "Sept 2023"
     }
 ]
