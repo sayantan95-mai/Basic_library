@@ -1,24 +1,29 @@
 # Library Management System
 
 ## Overview
-This is a Python-based Library Management System designed to demonstrate core Object-Oriented Programming (OOP) concepts. The application allows users to manage library items like books and DVDs, with data automatically saved to a local JSON file.
+This project is a modular Library Management System built in Python. It is designed to demonstrate key **Object-Oriented Programming (OOP)** concepts such as Inheritance, Polymorphism, and Encapsulation. The system allows librarians to manage an inventory of Books, DVDs, and Magazines, as well as track Members and their borrowed items.
 
 ## Key Features
-* **Object-Oriented Design**: Implements **Inheritance** (Books/DVDs inheriting from a generic Item), **Polymorphism** (custom behavior for different item types), and **Encapsulation** (protected data attributes).
-* **Data Persistence**: Automatically saves and loads library records using `library_data.json`.
-* **Duplicate Prevention**: Checks for existing IDs before adding new items.
-* **Modular Architecture**: Separates logic (`src`), data handling (`data`), and execution (`main.py`).
+* **Multi-Type Inventory**: Manage different item types (Books, DVDs, Magazines) with unique attributes (Pages, Runtime, Issue Date).
+* **Borrowing System**: Tracks who has borrowed what. Prevents users from borrowing items that are already out.
+* **Smart Returns & Fines**: automatically calculates overdue fines based on the item type:
+    * **Books**: 21 days loan, $0.50/day fine.
+    * **DVDs**: 7 days loan, $2.00/day fine.
+    * **Magazines**: 7 days loan, $1.00/day fine.
+* **Data Persistence**: All data (items and users) is saved to JSON files (`library_data.json`, `users.json`) so nothing is lost when the program closes.
+* **Menu Interface**: Easy-to-use command line menu powered by Python's `match-case` statement.
 
 ## Project Structure
 ```text
 LibrarySystem/
-├── main.py                 # Entry point for the application
+├── main.py                 # The main entry point (Menu & Logic)
 ├── README.md               # Project documentation
 ├── src/
 │   ├── __init__.py
-│   ├── items.py            # Classes: LibraryItem, Book, DVD
-│   └── users.py            # (Future) Member management logic
+│   ├── items.py            # Classes: LibraryItem, Book, DVD, Magazine
+│   └── users.py            # Classes: Member
 └── data/
     ├── __init__.py
     ├── data.py             # Handles JSON file operations (Save/Load)
-    └── library_data.json   # Database file
+    ├── library_data.json   # Storage for inventory
+    └── users.json          # Storage for member records
